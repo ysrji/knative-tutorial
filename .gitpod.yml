@@ -1,0 +1,8 @@
+tasks:
+  - init: yarn install
+    command: yarn run dev
+    name: yarn run dev
+  - command: kubectl login --token=${OPENSHIFT_TOKEN} --server=https://api.ca-central-1.starter.openshift-online.com:6443
+    name: kubectl login
+image:
+  file: .gitpod.Dockerfile
