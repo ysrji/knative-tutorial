@@ -9,4 +9,6 @@ USER gitpod
 #
 # More information: https://www.gitpod.io/docs/config-docker/
 
+RUN sudo apt-get install snapd
+
 RUN sudo snap install kubectl
